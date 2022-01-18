@@ -1,3 +1,15 @@
+.all-cards {
+  display: flex;
+  align-items: center;
+}
+
+.cards-sum {
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
 .card__container {
   width: 278px;
   height: 450px;
@@ -27,7 +39,7 @@
 
 .card__title {
   font-size: 22px;
-  font-family: ;
+  font-family: 'Big Shoulders Display', cursive;
   color: hsl(0, 0%, 95%);
   text-transform: uppercase;
   display: flex;
@@ -36,6 +48,8 @@
 
 .card__text {
   text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  color: hsl(0, 0%, 95%);
 }
 
 .button {
@@ -47,6 +61,7 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+  transition: all .4s ease;
 }
 
 .button > h3 {
@@ -55,11 +70,13 @@
   text-transform: capitalize;
   display: flex;
   align-items: center;
-
+  transition: all .4s ease;
 }
 
 .button:hover {
 background-color: hsl(31, 77%, 52%);
-color: hsl(0, 0%, 95%);
 }
 
+.button > h3:hover {
+  color: hsl(0, 0%, 95%);
+}

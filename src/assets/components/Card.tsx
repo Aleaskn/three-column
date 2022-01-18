@@ -13,7 +13,7 @@ interface ICard {
 }
 
 interface ICardAllData {
-  data : ICard
+  data : ICard 
 }
 
 const Card : React.FC<ICardAllData> = ({
@@ -21,29 +21,37 @@ const Card : React.FC<ICardAllData> = ({
 }) => {
   return (
 
-    <section className='card__container'>
+    <section className='all-cards'>
 
-      <div className='card'>
+     <div className='cards-sum'>
 
-             <div className='card-icon'>
+       <section className='card__container'>
 
-              {/*{require('../icon/' + data.icon)}*/}
+         <div className='card'>
 
-             </div>
+               <div className='card-icon'>
+
+                 {/*{require('../icon/' + data.icon)}*/}
+
+                </div>
                 
-           <div className='card__title'>
+             <div className='card__title'>
                     
-               <h2>{ data.title}</h2>
+                 <h2>{ data.title}</h2>
+
+              </div>
+
+             <p className='card__text'> { data.context } </p>
+
+               <div className='button'>
+
+                 <h3>learn more</h3>
+
+               </div>
 
           </div>
 
-          <p className='card__text'> { data.context } </p>
-
-            <div className='button'>
-
-              <h3>learn more</h3>
-
-            </div>
+        </section>
 
       </div>
 
