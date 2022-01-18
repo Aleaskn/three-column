@@ -3,7 +3,7 @@ import { TypeOfTag } from 'typescript'
 import { ReactComponent as IconSedans } from '../icon/icon-sedans.svg';
 import { ReactComponent as IconLuxury } from '../icon/icon-luxury.svg';
 import { ReactComponent as IconSuvs } from '../icon/icon-suvs.svg';
-import InfoButton from './InfoButton';
+//import Button from './Brutton';
 
 
 interface ICard {
@@ -24,6 +24,12 @@ const Card : React.FC<ICardAllData> = ({
     <section className='card__container'>
 
       <div className='card'>
+
+             <div className='card-icon'>
+
+              {/*{require('../icon/' + data.icon)}*/}
+
+             </div>
                 
            <div className='card__title'>
                     
@@ -33,7 +39,11 @@ const Card : React.FC<ICardAllData> = ({
 
           <p className='card__text'> { data.context } </p>
 
-            <InfoButton />
+            <div className='button'>
+
+              <h3>learn more</h3>
+
+            </div>
 
       </div>
 

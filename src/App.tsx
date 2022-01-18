@@ -4,7 +4,7 @@ import Card from './assets/components/Card';
 
 const cards = [
   {
-    icon : '',
+    icon : 'icon-sedans.svg',
     title: 'sedans',
     context : 'chose the sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.'
   },
