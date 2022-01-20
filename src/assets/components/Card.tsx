@@ -1,15 +1,14 @@
 import './Card.css';
 import { TypeOfTag } from 'typescript'
-import { ReactComponent as IconSedans } from '../icon/icon-sedans.svg';
-import { ReactComponent as IconLuxury } from '../icon/icon-luxury.svg';
-import { ReactComponent as IconSuvs } from '../icon/icon-suvs.svg';
-//import Button from './Brutton';
+import Button from './Button'
+import Icon from './Icon'
 
 
 interface ICard {
   icon : string,
   title : string,
-  context : string
+  context : string,
+  button : string
 }
 
 interface ICardAllData {
@@ -21,21 +20,20 @@ const Card : React.FC<ICardAllData> = ({
 }) => {
   return (
 
-    <section className='all-cards'>
+    
 
-     <div className='cards-sum'>
 
-       <section className='card__container'>
+        <section className='card__container'>
 
-         <div className='card'>
+          <div className='card'>
 
-               <div className='card-icon'>
+                <div className='card-icon'>
 
-                 {/*{require('../icon/' + data.icon)}*/}
+                  <Icon icon={ data.icon } />
 
                 </div>
                 
-             <div className='card__title'>
+              <div className='card__title'>
                     
                  <h2>{ data.title}</h2>
 
@@ -43,19 +41,13 @@ const Card : React.FC<ICardAllData> = ({
 
              <p className='card__text'> { data.context } </p>
 
-               <div className='button'>
-
-                 <h3>learn more</h3>
-
-               </div>
+              <Button textButton={ data.button }/> 
 
           </div>
 
         </section>
 
-      </div>
 
-    </section>
   )
 }
 

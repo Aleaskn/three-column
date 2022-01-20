@@ -1,19 +1,6 @@
-.all-cards {
-  display: flex;
-  align-items: center;
-}
-
-.cards-sum {
-  width: auto;
-  height: auto;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-
 .card__container {
   width: 278px;
   height: 450px;
-  padding: 10px;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -25,16 +12,7 @@
   height: 100%;
   box-sizing: border-box;
   background-color: hsl(31, 77%, 52%);
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 43px;
-  padding-bottom: 43px;
-  margin: 0px;
-}
-
-.card-icon {
-  display: flex;
-  justify-content: flex-start;
+  padding: 24px;
 }
 
 .card__title {
@@ -42,8 +20,8 @@
   font-family: 'Big Shoulders Display', cursive;
   color: hsl(0, 0%, 95%);
   text-transform: uppercase;
-  display: flex;
   justify-content: flex-start;
+  margin: 0px;
 }
 
 .card__text {
@@ -52,31 +30,3 @@
   color: hsl(0, 0%, 95%);
 }
 
-.button {
-  width: 134px;
-  height: 44px;
-  border-radius: 25px;
-  background-color: hsl(0, 0%, 95%);
-  border: solid hsl(0, 0%, 95%);
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  transition: all .4s ease;
-}
-
-.button > h3 {
-  font-size: 15px;
-  color: hsl(31, 77%, 52%);
-  text-transform: capitalize;
-  display: flex;
-  align-items: center;
-  transition: all .4s ease;
-}
-
-.button:hover {
-background-color: hsl(31, 77%, 52%);
-}
-
-.button > h3:hover {
-  color: hsl(0, 0%, 95%);
-}
