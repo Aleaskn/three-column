@@ -8,7 +8,9 @@ interface ICard {
   icon : string,
   title : string,
   context : string,
-  button : string
+  button : string,
+  buttonAn : string,
+  backgroundColor: string
 }
 
 interface ICardAllData {
@@ -18,14 +20,12 @@ interface ICardAllData {
 const Card : React.FC<ICardAllData> = ({
   data
 }) => {
+
   return (
-
-    
-
 
         <section className='card__container'>
 
-          <div className='card'>
+          <div className='card' style={{backgroundColor : data.backgroundColor}}>
 
                 <div className='card-icon'>
 
@@ -41,7 +41,7 @@ const Card : React.FC<ICardAllData> = ({
 
              <p className='card__text'> { data.context } </p>
 
-              <Button textButton={ data.button }/> 
+              <Button linkColor={ data.buttonAn } textButton={ data.button }/> 
 
           </div>
 
@@ -52,3 +52,4 @@ const Card : React.FC<ICardAllData> = ({
 }
 
 export default Card;
+

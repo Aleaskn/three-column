@@ -2,17 +2,19 @@ import './Button.css'
 import { TypeOfTag } from 'typescript'
 
 interface IButton {
-  textButton : string 
+  textButton : string,
+  linkColor : string
 }
 
 const Button : React.FC<IButton> = ({
-  textButton
+  textButton,
+  linkColor
 }) => {
   return (
 
       <div className='button'>
 
-        <a>{ textButton }</a>
+        <a style={{color : linkColor}}>{ textButton }</a>
 
       </div>
 
